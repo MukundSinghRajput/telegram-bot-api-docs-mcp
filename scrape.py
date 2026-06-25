@@ -26,9 +26,12 @@ APPROVED_MULTI_RETURNS = [
 
 
 def retrieve_info(url: str) -> dict:
-    r = requests.get(url)
+    r = requests.get(url, timeout=30)
+    r.raise_for_status()
     soup = BeautifulSoup(r.text, features="html5lib")
     dev_rules = soup.find("div", {"id": "dev_page_content"})
+    if dev_rules is None:
+        raise RuntimeError(f"Failed to find Telegram Bot API documentation content at {url}")
     curr_type = ""
     curr_name = ""
 

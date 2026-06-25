@@ -1,3 +1,8 @@
 venv
+.venv
+.uv-cache
+__pycache__
 *.pyc
 .idea
+api.json
+api.min.json

@@ -1,0 +1,27 @@
+[project]
+name = "telegram-bot-api-docs-mcp"
+version = "0.1.0"
+description = "MCP server exposing freshly scraped Telegram Bot API documentation"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "fastmcp>=3.4.2",
+    "html5lib>=1.1",
+    "requests>=2.32.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/MukundSinghRajput/telegram-bot-api-docs-mcp"
+Source = "https://github.com/MukundSinghRajput/telegram-bot-api-docs-mcp"
+Tracker = "https://github.com/MukundSinghRajput/telegram-bot-api-docs-mcp/issues"
+
+[project.scripts]
+telegram-bot-api-docs-mcp = "main:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "scrape"]
