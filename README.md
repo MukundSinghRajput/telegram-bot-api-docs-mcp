@@ -62,4 +62,7 @@ Start a new Codex session from this trusted repo and run `/mcp` to confirm that
 
 Thanks to [PaulSonOfLars](https://github.com/PaulSonOfLars) for such wonderful [project](https://github.com/PaulSonOfLars/telegram-bot-api-spec)
 
+## Example 
+Here is an [example bot](https://github.com/MukundSinghRajput/ColorCaptcha) created completely using `codex` 
+
 > Made by Mukund
